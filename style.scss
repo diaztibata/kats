@@ -1,77 +1,29 @@
-*{
-    margin: 0;
-    font-family: 'Bree Serif', serif;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-
 main{
-    width: calc(100% - 20px);
-    max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-areas: 
-    'upload upload'
-    'random favoritos';
-    gap: 20px;
-    .upload-kat{
-        grid-area: upload;
-        height: 10vh;
-    }
-    .random-images{
-        grid-area: random;
-    }
-    .kat-favoritos{
-        grid-area: favoritos;
-    }
-    h2{
-        text-align: center;
-    }
+    width: calc(100% - 30px);
+    max-width: 1200px;
     .random-images, .kat-favoritos{
-        height: 80vh;
-        overflow-y: scroll;
-        position: relative;
         .kats-list{
             display: flex;
-            flex-direction: column;
             flex-wrap: wrap;
-            width: 100%;
-            height: 1300px;
-            gap: 10px;
             .contenedor-un-gato{
-                width: calc(50% - 5px);
-
+                width: calc(25% - 10px);
+                margin: 10px 5px;
                 img{
                     width: 100%;
-                    height: auto;
+                    height: 250px;
+                    object-fit: cover;
                 }
                 button{
                     display: block;
-                    border: solid 0 transparent;
-                    background-color: darkorange;
                     margin: 0 auto 10px;
-                    padding: 7px 5px;
-                    box-sizing: border-box;
+                    border: solid  0 transparent;
+                    background-color: orange;
                     width: 100%;
+                    padding: 10px;
                     cursor: pointer;
-                    transition: .5s;
-                    &:hover{
-                        background-color: aqua;
-                    }
                 }
             }
         }
     }
-    .recargar{
-        width: 100%;
-        border: 0 solid transparent;
-        background-color: orange;
-        padding: 10px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        display: block;
-    }
 }
-
-

@@ -1,4 +1,4 @@
-const randomimg = "https://api.thecatapi.com/v1/images/search?limit=9";
+const randomimg = "https://api.thecatapi.com/v1/images/search?limit=4";
 const favoritoimg = "https://api.thecatapi.com/v1/favourites/";
 const uploadkat = 'https://api.thecatapi.com/v1/images/upload';
 const apikey = "95869f75-bb6c-4beb-8867-0fe285942ddf";
