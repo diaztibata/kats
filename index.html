@@ -4,8 +4,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The cat api - practica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <section id="uploadingMichi" class="upload-kat">
+            <h2>Subir foto</h2>
+    
+            <form id="upload-form">
+                <input id="file" type="file" name="file" />
+                <button type="button" onclick="subirKat()">Subit foto de michi</button>
+            </form>
+        </section>
+    
+        <section class="random-images">
+            <h2>Imagenes Aleatorias</h2>
+            <div id="random-kats" class="random-kats kats-list">
+                <!-- add con js -->
+            </div>
+            <button onclick="randomImages()" class="recargar">Recargar gatos</button>
+        </section>
+    
+        <section class="kat-favoritos">
+            <h2>Imagenes Favoritas</h2>
+            <div id="favoritos-kats" class="favoritos-kats kats-list">
+                <!-- add con js -->
+            </div>
+        </section>
+
+    </main>
+    
     <script src="main.js"></script>
 </body>
 </html>
